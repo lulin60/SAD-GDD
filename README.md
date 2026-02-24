@@ -19,10 +19,12 @@ The official PyTorch implementation for the following paper:Supervised Anomaly D
 
 ![image_name]()
 
-|col1|col2|col3|
-|-|-|-|
-|data1|data2|data3|
-|a|b|c|
+
+|Datasets|FF++(c23)|FF++(c40)|CD2|DFDC|DFDCP|DF1.0Rand|
+|-|-|-|-|-|-|-|
+|AUC|data2|data3| 4| 5|5|5|
+
+
 ## 2. Pretrained model
 Before running the training code, make sure you load the pre-trained weights. We provide pre-trained weights under [./models/pretrained](). You can also download Swin-Base model trained on ImageNet (through this [link]()).
 ## 3. Train
@@ -39,9 +41,9 @@ srun -p normal -w cluster-2 -c 8 --mem=20G --gres=gpu:3080ti:1 -u sh predict.sh
 Please kindly consider citing our papers in your publications.
 ```
 @inproceedings{Lu2026_supervise,
-    title={Preserving Fairness Generalization in Deepfake Detection},
-    author={Li Lin, Xinan He, Yan Ju, Xin Wang, Feng Ding, Shu Hu},
-    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-    year={2024},
+    title={Supervised Anomaly Detection for Generalized Deepfake Detection},
+    author={Lin Lu, guangshuai gao},
+    booktitle={SPL},
+    year={2026},
 }
 ```
