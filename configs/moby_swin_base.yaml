@@ -1,0 +1,27 @@
+IMG_SIZE: 224
+
+TRAIN:
+  EPOCHS: 15
+ 
+
+MODEL:
+  NAME: swinbase
+  SWIN:
+    EMBED_DIM: 128
+    DEPTHS: [ 2, 2, 18, 2 ]
+    NUM_HEADS: [ 4, 8, 16, 32 ]
+    WINDOW_SIZE: 7
+    ONLINE_DROP_PATH_RATE: 0.2
+  ENCODER: swin
+  
+  FLOW:
+    COUPLING_LAYERS: 8
+    POS_EMBED_DIM: 196
+    CLAMP_ALPHA: 1.9
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: True
+    POS_BETA: 0.01 
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    #BGSPP_LAMBDA: 1
+

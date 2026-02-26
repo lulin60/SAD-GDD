@@ -17,9 +17,9 @@ from models.build_model import build_encoder, Projector_MLP, Classifier_Mix,Two_
 from data import build_loader
 from logger import create_logger
 from utils_train_val_ad import train_one_epoch, validate
-from utils import load_checkpoint, save_checkpoint, auto_resume_helper
+from utils import load_checkpoint
 
-from models.flow_model import positionalencoding2d, load_flow_model, load_encoder_arch
+from models.flow_model import load_flow_model
 
 try:
     from apex import amp
@@ -36,7 +36,7 @@ def parse_option():
         nargs='+',
     )
     # easy config modification
-    parser.add_argument('--batch-size', type=int, help="batch size for single GPU")
+    parser.add_argument('--batch-size-train', type=int, help="batch size for single GPU")
     parser.add_argument('--batch-size-test', type=int,help="test batch size for single GPU")
 
     parser.add_argument('--output', default='output', type=str, metavar='PATH',
@@ -54,7 +54,6 @@ def parse_option():
     parser.add_argument("--coupling_layers", type=int, default=6)
     parser.add_argument("--feats_l", type=int, default=2)
     
-    parser.add_argument("--ce", type=bool, default=False)
     parser.add_argument("--ce_alpha", type=float, default=1)
     parser.add_argument("--contrast_alpha", type=float, default=0.1)
     parser.add_argument("--bgspp_lambda", type=float, default=0.1)
@@ -65,24 +64,22 @@ def parse_option():
     return args, config
 
 def main(config):
-    dataset_train,data_loader_val,data_loader_test,data_loader_test_celeb,data_loader_test_dfdc =  build_loader(config)
+    dataset_train,data_loader_val,data_loader_test =  build_loader(config)
 
     config.defrost()
-    config.DATA.TRAINING_IMAGES = len(dataset_train)
+    config.TRAINING_IMAGES = len(dataset_train)
     config.freeze()
 
-    logger.info(f"Creating model:{config.MODEL.ENCODER}/{config.MODEL.NAME},")
     pg_encoder,pg_encoder_projector_rgb,pg_encoder_projector_fre,pg_flow_rgb,pg_flow_fre,pg_classifier_mix = None,None,None,None,None,None
     encoder,encoder_projector_rgb,encoder_projector_fre,decoders_rgb,decoders_fre,classifier_mix = None,None,None,None,None,None
     find_unused_parameters = True # default True
-    layers = None
     
     print('name', args.model_name, config.MODEL_NAME,'MODEL_NAME***')
     if config.MODEL_NAME=='swinb':
         from models.swin_model_base import swin_base_patch4_window7_224_in22k as create_model,pretrain
         weights = './models/pretrain/swin_base_patch4_window7_224_22k.pth'
         swinb_M = create_model(num_classes=2)
-        pretrain(swinb_M,weights,device='cpu')
+        pretrain(swinb_M, weights, device='cpu')
         encoder = swinb_M.cuda()
         encoder = torch.nn.parallel.DistributedDataParallel(encoder, device_ids=[config.LOCAL_RANK], broadcast_buffers=False,find_unused_parameters=find_unused_parameters)
         pg_encoder = [p for p in encoder.parameters() if p.requires_grad]
@@ -90,8 +87,8 @@ def main(config):
     elif config.MODEL_NAME == 'swin_ad2stream':
 
         encoder = build_encoder(config)
-        path ='./models/pretrain/swin_base_patch4_window7_224_22k.pth' 
-        _ = load_checkpoint(config, path, encoder, logger)
+        path ='./models/pretrained/swin_base_patch4_window7_224_22k.pth' 
+        _ = load_checkpoint(config, path, encoder)
 
         # encoder two stream
         fre_flag = "high" # high low middle
@@ -147,24 +144,23 @@ def main(config):
     lr_scheduler = lr_scheduler.LambdaLR(optimizer, lr_lambda=lf)
 
     val_auc_best=0
-    start_time = time.time()
-    for epoch in range(config.TRAIN.START_EPOCH, config.TRAIN.EPOCHS):
-        dataset_train,data_loader_train = build_loader(config,train=True,epoch=epoch)
+    for epoch in range(config.TRAIN.EPOCHS):
+        dataset_train,data_loader_train = build_loader(config, train=True, epoch=epoch)
 
         data_loader_train.sampler.set_epoch(epoch)
-        loss_auc_dict_train = train_one_epoch(config, encoder, data_loader_train, model_params,optimizer, epoch, lr_scheduler,logger,layers=layers,\
-                                                encoder_projector_rgb=encoder_projector_rgb,encoder_projector_fre=encoder_projector_fre,
-                                                decoders_rgb=decoders_rgb,decoders_fre=decoders_fre,\
+        loss_auc_dict_train = train_one_epoch(config, encoder, data_loader_train, model_params,optimizer, epoch,\
+                                                encoder_projector_rgb=encoder_projector_rgb, encoder_projector_fre=encoder_projector_fre,
+                                                decoders_rgb=decoders_rgb, decoders_fre=decoders_fre,\
                                                 classifier_mix=classifier_mix)
         lr_scheduler.step()
 
-        loss_auc_dict_val = validate(config, encoder, data_loader_val,epoch,data_flag='val',layers=layers,
-                                        encoder_projector_rgb=encoder_projector_rgb,encoder_projector_fre=encoder_projector_fre,
-                                        decoders_rgb=decoders_rgb,decoders_fre=decoders_fre,\
+        loss_auc_dict_val = validate(config, encoder, data_loader_val, epoch,
+                                        encoder_projector_rgb=encoder_projector_rgb, encoder_projector_fre=encoder_projector_fre,
+                                        decoders_rgb=decoders_rgb, decoders_fre=decoders_fre,\
                                         classifier_mix=classifier_mix)
-        loss_auc_dict_test = validate(config, encoder, data_loader_test,epoch,data_flag='test',layers=layers,\
-                                        encoder_projector_rgb=encoder_projector_rgb,encoder_projector_fre=encoder_projector_fre,
-                                        decoders_rgb=decoders_rgb,decoders_fre=decoders_fre,\
+        loss_auc_dict_test = validate(config, encoder, data_loader_test, epoch, \
+                                        encoder_projector_rgb=encoder_projector_rgb, encoder_projector_fre=encoder_projector_fre,
+                                        decoders_rgb=decoders_rgb, decoders_fre=decoders_fre,\
                                         classifier_mix=classifier_mix)
         #'''
         loss_auc_dict_test_dfdc = {}
@@ -173,7 +169,7 @@ def main(config):
         loss_auc_dict_test_dfdc['loss_ce'] = 0
         #'''
         if dist.get_rank()==0:
-            print('train epoch:{}, train_auc{:.3f}, loss_ce{:.3f}'.format(
+            print('train epoch:{}, train_auc:{:.3f}, loss_ce:{:.3f}'.format(
                                                                     epoch,
                                                                     loss_auc_dict_train['auc'],
                                                                     loss_auc_dict_train['loss_ce'])
@@ -181,15 +177,13 @@ def main(config):
             print('val_ff++ epoch:{}, val_auc:{:.3f}, val_auc_ad:{:.3f}, val_ce:{:.3f}'.format(epoch,
                                                                 loss_auc_dict_val['auc'],
                                                                 loss_auc_dict_val['auc_ad'],
-                                                                loss_auc_dict_val['loss_ce'],
-                                                                )
+                                                                loss_auc_dict_val['loss_ce'])
                                                                 )
                     
             print('test_ff++ epoch:{}, test_auc:{:.3f}, test_auc_ad:{:.3f}, test_ce:{:.3f}'.format(epoch,
                                                                 loss_auc_dict_test['auc'],
                                                                 loss_auc_dict_test['auc_ad'],
-                                                                loss_auc_dict_test['loss_ce'],
-                                                                )
+                                                                loss_auc_dict_test['loss_ce'])
                                                                 )
 
         if dist.get_rank() == 0 :
@@ -237,15 +231,9 @@ def main(config):
                     os.system('rm -rf {}/decoders_fre*_best.pth'.format(model_save_dir))
                     torch.save(decoders_fre[0].state_dict(), "{}/decoders_fre{}_auc_best.pth".format(model_save_dir,epoch)) 
 
-    total_time = time.time() - start_time
-    total_time_str = str(datetime.timedelta(seconds=int(total_time)))
-    logger.info('Training time {}'.format(total_time_str))
-
 
 if __name__ == '__main__':
     args, config = parse_option()
-    if config.AMP_OPT_LEVEL != "O0":
-        assert amp is not None, "amp not installed!"
 
     if 'RANK' in os.environ and 'WORLD_SIZE' in os.environ:
         rank = int(os.environ["RANK"])
@@ -270,7 +258,7 @@ if __name__ == '__main__':
     torch.distributed.init_process_group(backend='nccl', init_method='env://', world_size=world_size, rank=rank)
     torch.distributed.barrier()
 
-    seed = config.SEED + dist.get_rank()
+    seed = dist.get_rank()
     np.random.seed(seed)
     #'''
     torch.cuda.manual_seed_all(seed) # 

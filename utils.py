@@ -9,6 +9,20 @@ try:
 except ImportError:
     amp = None
 
+def load_checkpoint(config, path, model):
+    checkpoint_new = {}
+    print(path,'path *****')
+    checkpoint = torch.load(path, map_location='cpu')['model']
+
+    for item in checkpoint.keys():
+        checkpoint_new[item] = checkpoint[item]
+
+    msg = model.load_state_dict(checkpoint_new, strict=False)
+
+    del checkpoint
+    torch.cuda.empty_cache()
+    return msg
+
 
 def save_checkpoint(config, epoch, model, max_accuracy, optimizer, lr_scheduler, logger):
     save_state = {'model': model.state_dict(),

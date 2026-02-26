@@ -1,0 +1,3531 @@
+[2026-02-25 15:31:30 swinbase] (train.py 287): INFO Full config saved to output/config.json
+[2026-02-25 15:31:30 swinbase] (train.py 290): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+OUTPUT: output
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  Train_shuffle: false
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-25 15:32:36 swinbase] (train.py 287): INFO Full config saved to output/config.json
+[2026-02-25 15:32:36 swinbase] (train.py 290): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+OUTPUT: output
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  Train_shuffle: false
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-25 15:34:31 swinbase] (train.py 287): INFO Full config saved to output/config.json
+[2026-02-25 15:34:31 swinbase] (train.py 290): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+OUTPUT: output
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  Train_shuffle: false
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-25 15:43:02 swinbase] (train.py 287): INFO Full config saved to output/config.json
+[2026-02-25 15:43:02 swinbase] (train.py 290): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+OUTPUT: output
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  Train_shuffle: false
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-25 15:44:06 swinbase] (train.py 287): INFO Full config saved to output/config.json
+[2026-02-25 15:44:06 swinbase] (train.py 290): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+OUTPUT: output
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  Train_shuffle: false
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-25 15:44:24 swinbase] (train.py 287): INFO Full config saved to output/config.json
+[2026-02-25 15:44:24 swinbase] (train.py 290): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+OUTPUT: output
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  Train_shuffle: false
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-25 15:46:02 swinbase] (train.py 287): INFO Full config saved to output/config.json
+[2026-02-25 15:46:02 swinbase] (train.py 290): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  Train_shuffle: false
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-25 15:48:56 swinbase] (train.py 287): INFO Full config saved to output/config.json
+[2026-02-25 15:48:56 swinbase] (train.py 290): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  Train_shuffle: false
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-25 15:48:56 swinbase] (train.py 74): INFO Creating model:swin/swinbase,
+[2026-02-25 15:49:51 swinbase] (train.py 287): INFO Full config saved to output/config.json
+[2026-02-25 15:49:51 swinbase] (train.py 290): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  Train_shuffle: false
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-25 15:49:51 swinbase] (train.py 74): INFO Creating model:swin/swinbase,
+[2026-02-25 15:51:16 swinbase] (train.py 287): INFO Full config saved to output/config.json
+[2026-02-25 15:51:16 swinbase] (train.py 290): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  Train_shuffle: false
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-25 15:51:16 swinbase] (train.py 74): INFO Creating model:swin/swinbase,
+[2026-02-25 15:53:07 swinbase] (train.py 287): INFO Full config saved to output/config.json
+[2026-02-25 15:53:07 swinbase] (train.py 290): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  Train_shuffle: false
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-25 15:53:07 swinbase] (train.py 74): INFO Creating model:swin/swinbase,
+[2026-02-25 16:01:06 swinbase] (train.py 287): INFO Full config saved to output/config.json
+[2026-02-25 16:01:06 swinbase] (train.py 290): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  Train_shuffle: false
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-25 16:01:06 swinbase] (train.py 74): INFO Creating model:swin/swinbase,
+[2026-02-25 16:09:13 swinbase] (train.py 287): INFO Full config saved to output/config.json
+[2026-02-25 16:09:13 swinbase] (train.py 290): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  Train_shuffle: false
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-25 16:09:13 swinbase] (train.py 74): INFO Creating model:swin/swinbase,
+[2026-02-25 16:24:39 swinbase] (train.py 287): INFO Full config saved to output/config.json
+[2026-02-25 16:24:39 swinbase] (train.py 290): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  Train_shuffle: false
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-25 16:24:39 swinbase] (train.py 74): INFO Creating model:swin/swinbase,
+[2026-02-25 16:32:20 swinbase] (train.py 287): INFO Full config saved to output/config.json
+[2026-02-25 16:32:20 swinbase] (train.py 290): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  Train_shuffle: false
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-25 16:32:20 swinbase] (train.py 74): INFO Creating model:swin/swinbase,
+[2026-02-25 16:40:10 swinbase] (train.py 287): INFO Full config saved to output/config.json
+[2026-02-25 16:40:10 swinbase] (train.py 290): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  Train_shuffle: false
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-25 16:40:10 swinbase] (train.py 74): INFO Creating model:swin/swinbase,
+[2026-02-25 16:59:59 swinbase] (train.py 287): INFO Full config saved to output/config.json
+[2026-02-25 16:59:59 swinbase] (train.py 290): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  Train_shuffle: false
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-25 16:59:59 swinbase] (train.py 74): INFO Creating model:swin/swinbase,
+[2026-02-25 17:08:47 swinbase] (train.py 287): INFO Full config saved to output/config.json
+[2026-02-25 17:08:47 swinbase] (train.py 290): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  Train_shuffle: false
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-25 17:08:47 swinbase] (train.py 74): INFO Creating model:swin/swinbase,
+[2026-02-25 17:27:04 swinbase] (train.py 287): INFO Full config saved to output/config.json
+[2026-02-25 17:27:04 swinbase] (train.py 290): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  Train_shuffle: false
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-25 17:27:04 swinbase] (train.py 74): INFO Creating model:swin/swinbase,
+[2026-02-25 17:35:20 swinbase] (utils_train_val_ad.py 343): INFO EPOCH 0 training takes 0:08:08
+[2026-02-25 17:44:32 swinbase] (utils_train_val_ad.py 343): INFO EPOCH 1 training takes 0:08:13
+[2026-02-25 17:52:29 swinbase] (train.py 285): INFO Full config saved to output/config.json
+[2026-02-25 17:52:29 swinbase] (train.py 288): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-25 17:52:29 swinbase] (train.py 74): INFO Creating model:swin/swinbase,
+[2026-02-25 18:00:22 swinbase] (utils_train_val_ad.py 343): INFO EPOCH 0 training takes 0:07:44
+[2026-02-25 18:09:15 swinbase] (utils_train_val_ad.py 343): INFO EPOCH 1 training takes 0:07:57
+[2026-02-25 18:18:05 swinbase] (utils_train_val_ad.py 343): INFO EPOCH 2 training takes 0:07:55
+[2026-02-25 18:27:00 swinbase] (utils_train_val_ad.py 343): INFO EPOCH 3 training takes 0:07:59
+[2026-02-25 18:35:49 swinbase] (utils_train_val_ad.py 343): INFO EPOCH 4 training takes 0:07:53
+[2026-02-25 18:44:40 swinbase] (utils_train_val_ad.py 343): INFO EPOCH 5 training takes 0:07:55
+[2026-02-25 18:53:29 swinbase] (utils_train_val_ad.py 343): INFO EPOCH 6 training takes 0:07:52
+[2026-02-25 19:02:15 swinbase] (utils_train_val_ad.py 343): INFO EPOCH 7 training takes 0:07:49
+[2026-02-25 19:11:04 swinbase] (utils_train_val_ad.py 343): INFO EPOCH 8 training takes 0:07:52
+[2026-02-25 19:19:57 swinbase] (utils_train_val_ad.py 343): INFO EPOCH 9 training takes 0:07:55
+[2026-02-25 19:28:50 swinbase] (utils_train_val_ad.py 343): INFO EPOCH 10 training takes 0:07:52
+[2026-02-25 19:31:25 swinbase] (train.py 281): INFO Full config saved to output/config.json
+[2026-02-25 19:31:25 swinbase] (train.py 284): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-25 19:41:01 swinbase] (train.py 278): INFO Full config saved to output/config.json
+[2026-02-25 19:41:01 swinbase] (train.py 281): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-25 20:19:22 swinbase] (train.py 278): INFO Full config saved to output/config.json
+[2026-02-25 20:19:22 swinbase] (train.py 281): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-25 20:22:21 swinbase] (train.py 278): INFO Full config saved to output/config.json
+[2026-02-25 20:22:21 swinbase] (train.py 281): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-25 20:24:36 swinbase] (train.py 278): INFO Full config saved to output/config.json
+[2026-02-25 20:24:36 swinbase] (train.py 281): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-25 20:26:19 swinbase] (train.py 278): INFO Full config saved to output/config.json
+[2026-02-25 20:26:19 swinbase] (train.py 281): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-25 20:37:42 swinbase] (train.py 278): INFO Full config saved to output/config.json
+[2026-02-25 20:37:42 swinbase] (train.py 281): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-25 20:40:46 swinbase] (train.py 278): INFO Full config saved to output/config.json
+[2026-02-25 20:40:46 swinbase] (train.py 281): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-25 21:10:47 swinbase] (train.py 278): INFO Full config saved to output/config.json
+[2026-02-25 21:10:47 swinbase] (train.py 281): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-25 21:43:19 swinbase] (train.py 278): INFO Full config saved to output/config.json
+[2026-02-25 21:43:19 swinbase] (train.py 281): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-25 21:47:46 swinbase] (train.py 278): INFO Full config saved to output/config.json
+[2026-02-25 21:47:46 swinbase] (train.py 281): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-25 22:01:22 swinbase] (train.py 278): INFO Full config saved to output/config.json
+[2026-02-25 22:01:22 swinbase] (train.py 281): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-26 03:03:27 swinbase] (train.py 278): INFO Full config saved to output/config.json
+[2026-02-26 03:03:27 swinbase] (train.py 281): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-26 05:23:49 swinbase] (train.py 278): INFO Full config saved to output/config.json
+[2026-02-26 05:23:49 swinbase] (train.py 281): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-26 07:40:15 swinbase] (train.py 278): INFO Full config saved to output/config.json
+[2026-02-26 07:40:15 swinbase] (train.py 281): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-26 08:37:55 swinbase] (train.py 278): INFO Full config saved to output/config.json
+[2026-02-26 08:37:55 swinbase] (train.py 281): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-26 08:45:59 swinbase] (train.py 278): INFO Full config saved to output/config.json
+[2026-02-26 08:45:59 swinbase] (train.py 281): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 150
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-26 16:51:08 swinbase] (train.py 278): INFO Full config saved to output/config.json
+[2026-02-26 16:51:08 swinbase] (train.py 281): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-26 16:52:33 swinbase] (train.py 278): INFO Full config saved to output/config.json
+[2026-02-26 16:52:33 swinbase] (train.py 281): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-26 16:54:12 swinbase] (train.py 278): INFO Full config saved to output/config.json
+[2026-02-26 16:54:12 swinbase] (train.py 281): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-26 17:01:08 swinbase] (train.py 278): INFO Full config saved to output/config.json
+[2026-02-26 17:01:08 swinbase] (train.py 281): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-26 17:25:21 swinbase] (train.py 278): INFO Full config saved to output/config.json
+[2026-02-26 17:25:21 swinbase] (train.py 281): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-26 17:47:04 swinbase] (train.py 278): INFO Full config saved to output/config.json
+[2026-02-26 17:47:04 swinbase] (train.py 281): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-26 17:48:27 swinbase] (train.py 278): INFO Full config saved to output/config.json
+[2026-02-26 17:48:27 swinbase] (train.py 281): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-26 17:53:45 swinbase] (train.py 278): INFO Full config saved to output/config.json
+[2026-02-26 17:53:45 swinbase] (train.py 281): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-26 18:24:08 swinbase] (train.py 278): INFO Full config saved to output/config.json
+[2026-02-26 18:24:08 swinbase] (train.py 281): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-26 18:26:43 swinbase] (train.py 278): INFO Full config saved to output/config.json
+[2026-02-26 18:26:43 swinbase] (train.py 281): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-26 18:29:23 swinbase] (train.py 278): INFO Full config saved to output/config.json
+[2026-02-26 18:29:23 swinbase] (train.py 281): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE: false
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  BASE_LR: 0.0005
+  EPOCHS: 15
+  WEIGHT_DECAY: 0.05
+weight_name: ''
+
+[2026-02-26 18:59:09 swinbase] (train.py 277): INFO Full config saved to output/config.json
+[2026-02-26 18:59:09 swinbase] (train.py 280): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  EPOCHS: 15
+weight_name: ''
+
+[2026-02-26 19:00:02 swinbase] (train.py 277): INFO Full config saved to output/config.json
+[2026-02-26 19:00:02 swinbase] (train.py 280): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  EPOCHS: 15
+weight_name: ''
+
+[2026-02-26 19:00:51 swinbase] (train.py 277): INFO Full config saved to output/config.json
+[2026-02-26 19:00:51 swinbase] (train.py 280): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  EPOCHS: 15
+weight_name: ''
+
+[2026-02-26 19:01:45 swinbase] (train.py 277): INFO Full config saved to output/config.json
+[2026-02-26 19:01:45 swinbase] (train.py 280): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  EPOCHS: 15
+weight_name: ''
+
+[2026-02-26 19:03:19 swinbase] (train.py 277): INFO Full config saved to output/config.json
+[2026-02-26 19:03:19 swinbase] (train.py 280): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  EPOCHS: 15
+weight_name: ''
+
+[2026-02-26 19:05:29 swinbase] (train.py 277): INFO Full config saved to output/config.json
+[2026-02-26 19:05:29 swinbase] (train.py 280): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  EPOCHS: 15
+weight_name: ''
+
+[2026-02-26 19:06:39 swinbase] (train.py 277): INFO Full config saved to output/config.json
+[2026-02-26 19:06:39 swinbase] (train.py 280): INFO AD: true
+AD_ALPHA: 0.5
+AD_DIM: 512
+BASE:
+- ''
+BATCH_SIZE_TEST: 20
+BATCH_SIZE_TRAIN: 14
+BGSPP_LAMBDA: 1.0
+CE_ALPHA: 1.0
+CONTRAST_ALPHA: 0.018
+FEATS_L: 1
+IMG_SIZE: 224
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  ENCODER: swin
+  FLOW:
+    CLAMP_ALPHA: 1.9
+    COUPLING_LAYERS: 8
+    FLOW_ARCH: conditional_flow_model
+    Focal_WEIGHTING: true
+    MARGIN_TAU: 0.1
+    NORMALIZER: 10
+    POS_BETA: 0.01
+    POS_EMBED_DIM: 196
+  LABEL_SMOOTHING: 0.1
+  NAME: swinbase
+  NUM_CLASSES: 1000
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NORM_BEFORE_MLP: ln
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    ONLINE_DROP_PATH_RATE: 0.2
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: ''
+    WINDOW_SIZE: 7
+MODEL_NAME: swin_ad2stream
+NUM_WORKERS: 8
+OUTPUT: output
+PIN_MEMORY: true
+SAVE_NAME: ceAlpha1.0_bgspp1.0_ct0.018_posebeta0.01_lr5_Clipgrad1.0_rgbdctHf_ADTrue_Clayers8_dim512
+TRAIN:
+  EPOCHS: 15
+weight_name: ''
+
