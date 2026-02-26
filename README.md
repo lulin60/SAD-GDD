@@ -1,5 +1,5 @@
 # SAD-GDD
-The official PyTorch implementation for the following paper:Supervised Anomaly Detection for Generalized Deepfake Detection
+The official PyTorch implementation for the following paper:Supervised Anomaly Detection for Generalized Deepfake Detection.
 
 ## 1. Datasets
 - Generate FF_train.csv, FF_val.csv, FF_test.csv according to the following format:
@@ -12,22 +12,15 @@ For example:
 ```
 
 
-1. listee
-22. lista
-3. list
-
-   [link](https://github.com/lulin60/SAD-GDD/edit/main/README.md#L4C2)
-
- ![image_name]()
-
-Video-level AUCs are reported for multiple datasets. Training is conducted on the FF++ (c23).
+- Video-level AUCs are reported for multiple datasets. Training is conducted on the FF++ (c23).
+  
 |Datasets|FF++|CD2|DFDC|DFDCP|DF1.0 std/rand|
 |-|-|-|-|-|-|
 |AUC (%)|98.76|92.02|78.21|86.81|94.01|
 
 
 ## 2. Pretrained model
-Before running the training code, make sure you load the pre-trained weights. We provide pre-trained weights under [./models/pretrained](). You can also download Swin-Base model trained on ImageNet (through this [link]()).
+Before running the training code, make sure you load the pre-trained weights. We provide pre-trained weights under [./models/pretrained](). You can also download Swin-Base model trained on ImageNet-22K (through this [link](https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_base_patch4_window7_224_22k.pth)).
 ## 3. Train
 For model training, we provide a sh file to train our model by running sh train.sh.
 ```
