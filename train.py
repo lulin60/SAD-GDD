@@ -15,7 +15,6 @@ import torch.distributed as dist
 from config import get_config
 from models.build_model import build_encoder, Projector_MLP, Classifier_Mix,Two_Stream
 from data import build_loader
-from logger import create_logger
 from utils_train_val_ad import train_one_epoch, validate
 from utils import load_checkpoint
 
@@ -268,15 +267,11 @@ if __name__ == '__main__':
     cudnn.benchmark = False
 
     os.makedirs(config.OUTPUT, exist_ok=True)
-    logger = create_logger(output_dir=config.OUTPUT, dist_rank=dist.get_rank(), name=f"{config.MODEL.NAME}")
 
     if dist.get_rank() == 0:
         path = os.path.join(config.OUTPUT, "config.json")
         with open(path, "w") as f:
             f.write(config.dump())
-        logger.info(f"Full config saved to {path}")
 
-    # print config
-    logger.info(config.dump())
-    
+   
     main(config)
